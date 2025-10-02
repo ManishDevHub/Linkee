@@ -32,7 +32,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setPending(true);
 
-    const res = await fetch("/api/auth/register", {
+    const res = await fetch("/register", {
         method: 'POST' ,
         headers: { "Content-Type": "application/josn" },
         body: JSON.stringify(form),
